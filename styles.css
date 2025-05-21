@@ -4,7 +4,7 @@
             div#janela1, div#janela2,div#bola1, div#bola2 {
                 position:absolute;
                 width:150px;height:150px;
-                top:130px;
+                top:180px;
             }
 
    
@@ -17,6 +17,7 @@
             div#janela2 {
                 left:180px;
                 background-color:rgb(255,0,0);
+                 transition: all 1s ease-out;
             }
             
             div#janela1:hover + div#janela2 {
@@ -48,3 +49,40 @@
                 transform: rotate(90deg) scale(1.5);
                 left:580px;
             }
+
+            /*imagem*/
+
+            section {
+                display:inline;
+                margin:5px 25px;
+            }
+
+            section.thumb {
+                display:inline-block;
+                cursor:pointer;
+                transition: all 1s ease-out;
+            }
+            section#thumb1:hover {
+                transform:scale(1.3);
+            }
+
+            section#thumb2:hover {
+               transform: rotate(45deg);
+            }
+
+             section#thumb3{
+                 transform-origin: top left;
+            }
+              section#thumb3:hover {
+                transform:			scale(1.3);
+            }
+                section#thumb4{
+                 transform-origin: top right;
+            }
+               section#thumb4:hover {
+                transform:			scale(1.3);
+            }
+        
+                /*  transition-property: transform;
+                transition-duration: 2s;*/
+               /* transition: all 1s ease-in;*/
