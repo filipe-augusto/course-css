@@ -1,0 +1,50 @@
+
+       
+
+            div#janela1, div#janela2,div#bola1, div#bola2 {
+                position:absolute;
+                width:150px;height:150px;
+                top:130px;
+            }
+
+   
+            div#janela1 {
+                left:10px;
+                background-color:rgb(0,102,204);
+                cursor:pointer;
+            }
+
+            div#janela2 {
+                left:180px;
+                background-color:rgb(255,0,0);
+            }
+            
+            div#janela1:hover + div#janela2 {
+                transition: all 1s ease-out;
+                transform: rotate(90deg);
+                left:580px;
+            }
+            
+            div#janela1:hover{
+                 transition: all 1s ease-out;
+                width: 400px;
+            }
+
+            /*BOLA*/
+             div#bola1, div#bola2{
+                border-radius:50%;
+                background-color:rgb(0,102,204);
+                cursor:pointer;
+                top: 350px;
+            }
+            div#bola2 {
+                left:200px;
+                background-color: green;
+                 transition: all 1s ease-out;
+            }
+
+            div#bola1:hover + div#bola2 {
+                transition: all 1s ease-out;
+                transform: rotate(90deg) scale(1.5);
+                left:580px;
+            }
